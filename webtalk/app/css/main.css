@@ -1,0 +1,100 @@
+html {
+  height: 100%; }
+
+body {
+  font-size: 62.5%;
+  height: 100%; }
+
+.general {
+  height: 100%; }
+
+header {
+  height: 6rem;
+  overflow: hidden; }
+  header .logo {
+    float: left;
+    background: #2c3238;
+    width: 19rem; }
+    header .logo h1 {
+      margin: 0; }
+      header .logo h1 a {
+        background: url(../images/design/misc/logo.jpg) no-repeat center center/cover;
+        display: block;
+        height: 6rem;
+        text-decoration: none;
+        text-indent: -9999px;
+        width: 19rem; }
+  header .searchBox {
+    float: left;
+    position: relative;
+    width: 54.5rem; }
+    header .searchBox-input {
+      background: #363e45;
+      border: 0;
+      box-sizing: border-box;
+      color: #778591;
+      display: block;
+      font-size: 1.6rem;
+      height: 6rem;
+      padding-left: 6rem;
+      width: 100%; }
+    header .searchBox-iconSearch {
+      background: url(../images/design/icon/search.png) no-repeat center center/cover;
+      display: block;
+      height: 2.5rem;
+      left: 1.5rem;
+      position: absolute;
+      top: 1.5rem;
+      width: 2.5rem; }
+  header .navHeader {
+    float: left;
+    width: 366px; }
+    header .navHeader-nav {
+      background: #363e45; }
+      header .navHeader-nav ul {
+        list-style: none;
+        text-align: right;
+        padding: 0;
+        margin: 0; }
+        header .navHeader-nav ul .navHeader-nav-item {
+          display: inline-block; }
+          header .navHeader-nav ul .navHeader-nav-item a {
+            color: transparent;
+            display: block;
+            height: 6rem;
+            width: 7rem; }
+          header .navHeader-nav ul .navHeader-nav-item--message {
+            padding-top: 15px; }
+            header .navHeader-nav ul .navHeader-nav-item--message span {
+              background: url(../images/design/icon/menuHeader--message.png) no-repeat center center/cover;
+              display: block;
+              height: 30px;
+              width: 33px; }
+          header .navHeader-nav ul .navHeader-nav-item--notification {
+            padding-top: 15px; }
+            header .navHeader-nav ul .navHeader-nav-item--notification span {
+              background: url(../images/design/icon/menuHeader--notification.png) no-repeat center center/cover;
+              display: block;
+              height: 30px;
+              width: 31px; }
+          header .navHeader-nav ul .navHeader-nav-item--users {
+            padding-top: 15px; }
+            header .navHeader-nav ul .navHeader-nav-item--users span {
+              background: url(../images/design/icon/menuHeader--users.png) no-repeat center center/cover;
+              display: block;
+              height: 30px;
+              width: 32px; }
+          header .navHeader-nav ul .navHeader-nav-item--settings {
+            padding-top: 15px; }
+            header .navHeader-nav ul .navHeader-nav-item--settings span {
+              background: url(../images/design/icon/menuHeader--settings.png) no-repeat center center/cover;
+              display: block;
+              height: 30px;
+              width: 32px; }
+          header .navHeader-nav ul .navHeader-nav-item--menu {
+            padding-top: 15px; }
+            header .navHeader-nav ul .navHeader-nav-item--menu span {
+              background: url(../images/design/icon/menuHeader--menu.png) no-repeat center center/cover;
+              display: block;
+              height: 30px;
+              width: 34px; }

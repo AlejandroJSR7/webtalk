@@ -42,7 +42,7 @@ gulp.task('js', function (){
 gulp.task('watch', function(){
 	gulp.watch(['./app/*.html'], ['html']);
 	gulp.watch('./sass/**/*.scss', ['sass']);
-	gulp.watch('./app/**/*.css', ['sass']);
+	gulp.watch('css/**/*.css', ['sass']);
 	gulp.watch('js/*.js', ['js']);
 });
 

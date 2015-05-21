@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" />
 	<title>Webtalk</title>
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
@@ -10,25 +10,28 @@
 <body>
 	<div class="general">
 		<header>
+		<div class="container">
 			<div class="logo">
-				<h1><a href="">webtalk</a></h1>
+				<h1><a href="#">webtalk</a></h1>
 			</div><!--/logo-->
 			<div class="searchBox">
 				<form action="">
-					<input type="search" class="searchBox-input">
+					<i class="searchBox-iconSearch"></i>
+					<input type="search" class="searchBox-input" placeholder="Search people, job titles, companies and more" />
 				</form>
 			</div><!--/searchBox-->
 			<div class="navHeader">
 				<nav class="navHeader-nav">
 					<ul>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
+						<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--message"><span>Message</span></a></li>
+						<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--notification"><span>Notification</span></a></li>
+						<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--users"><span>Users</span></a></li>
+						<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--settings"><span>Settings</span></a></li>
+						<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--menu"><span>Menu</span></a></li>
 					</ul>
 				</nav><!--/navHeader-nav-->
 			</div><!--/navHeader-->
+		</div>
 		</header>
 		<section class="mainBanner">
 			<i class="mainBanner-shadow"></i>
@@ -118,6 +121,7 @@
 			</section><!--/mainAndAsides-asides-->
 		</section><!--/mainAndAsides-->
 	</div><!--/general-->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
