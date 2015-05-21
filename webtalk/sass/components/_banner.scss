@@ -1,0 +1,30 @@
+.mainBanner{
+	height: 390px;
+	width: 100%;
+	.container{
+		position: relative;
+		.mainBanner-shadow{
+			background: url(../images/design/bg/mainBanner-shadow.png) repeat left top;
+			display: block;
+			height: 390px;
+			opacity: 0.3;
+			position: absolute;
+			width: 1100px;
+		}//mainBanner-shadow
+		.mainBanner-img{
+			color: blue;
+		}//mainBanner-img
+		.mainBanner-title{
+			color: white;
+			display: block;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 4.2rem;
+			left: calc(50% - 250px);
+			margin: 0;
+			position: absolute;
+			text-align: center;
+			top: 45%;
+			width: 500px;
+		}//mainBanner-title
+	}//container
+}//mainBanner

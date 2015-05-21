@@ -98,3 +98,29 @@ header {
               display: block;
               height: 30px;
               width: 34px; }
+
+.mainBanner {
+  height: 390px;
+  width: 100%; }
+  .mainBanner .container {
+    position: relative; }
+    .mainBanner .container .mainBanner-shadow {
+      background: url(../images/design/bg/mainBanner-shadow.png) repeat left top;
+      display: block;
+      height: 390px;
+      opacity: 0.3;
+      position: absolute;
+      width: 1100px; }
+    .mainBanner .container .mainBanner-img {
+      color: blue; }
+    .mainBanner .container .mainBanner-title {
+      color: white;
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 4.2rem;
+      left: calc(50% - 250px);
+      margin: 0;
+      position: absolute;
+      text-align: center;
+      top: 45%;
+      width: 500px; }
