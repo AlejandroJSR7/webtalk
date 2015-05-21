@@ -1,0 +1,151 @@
+.profileAndMainNavigation{
+	height: 6.5rem;
+	.container{
+		height: 6.5rem;
+		position: relative;
+		.profileAvatar{
+			bottom: 1rem;
+			height: 13rem;
+			left: 5.5rem;
+			position: absolute;
+			width: 13rem;
+			&-image{
+				display: block;
+				height: 13rem;
+				width: 13rem;
+			}//profileAvatar-image
+		}//profileAvatar
+		.profileInformation{
+			box-sizing: border-box;
+			font-size: 1.6rem;
+			font-weight: normal;
+			height: 6.5rem;
+			left: 185px;
+			padding-left: 20px;
+			position: absolute;
+			top: -6.5rem;
+			width: calc(100% - 201px);
+			&-name{
+				color: white;
+				margin: 0;
+			}//profileInformation-name
+			&-from{
+				color: white;
+				margin: 0;
+				&-city{}
+				&-country{}
+			}//profileInformation-from
+			&-followers{
+				color: white;
+				font-weight: 400;
+				position: absolute;
+				right: 2rem;
+				top: 0;
+				span{
+					display: block;
+					text-align: right;
+				}
+			}//profileInformation-followers
+		}//profileInformation
+	}//container
+	.mainNavigation{
+		left: 185px;
+		position: relative;
+		width: calc(100% - 201px);
+		&-nav{
+			ul{
+				font-size: 1.6rem;
+				height: 6.5rem;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li.mainNavigation-item{
+					display: inline-block;
+					line-height: 6.5rem;
+					a{
+						color: $gray2;
+						display: block;
+						font-weight: 600;
+						height: 6.5rem;
+						padding: 0 .5rem;
+						text-align: center;
+						span{
+							display: inline-block;
+							height: 20px;
+							margin-right: 5px;
+							width: 20px;
+						}//span
+						&:hover{
+							color: $blue1;
+							text-decoration: none;
+						}//a:hover
+					}//a
+					&--profile{
+						a{
+							span{
+								background: url(../images/design/icon/mainNavigation-profile.png) no-repeat center center /cover;
+								height: 21px;
+								width: 25px;
+							}
+						}
+					}//mainNavigation-item--profile
+					&--products{
+						a{
+							span{
+								background: url(../images/design/icon/mainNavigation-products.png) no-repeat center center /cover;
+								height: 21px;
+								width: 21px;
+							}
+						}
+					}//mainNavigation-item--products
+					&--files{
+						a{
+							span{
+								background: url(../images/design/icon/mainNavigation-files.png) no-repeat center center /cover;
+								height: 21px;
+								width: 21px;
+							}
+						}
+					}//mainNavigation-item--files
+					&--photos{
+						a{
+							span{
+								background: url(../images/design/icon/mainNavigation-photos.png) no-repeat center center /cover;
+								height: 21px;
+								width: 21px;
+							}
+						}
+					}//mainNavigation-item--photos
+					&--videos{
+						a{
+							span{
+								background: url(../images/design/icon/mainNavigation-videos.png) no-repeat center center /cover;
+								height: 21px;
+								width: 21px;
+							}
+						}
+					}//mainNavigation-item--videos
+					&--about{
+						a{
+							span{
+								background: url(../images/design/icon/mainNavigation-about.png) no-repeat center center /cover;
+								height: 21px;
+								width: 21px;
+							}
+						}
+					}//mainNavigation-item--about
+				}//li.mainNavigation-item
+			}//ul
+			.btnFollow{
+				background: url(../images/design/misc/btnFollow.png) no-repeat center center /cover;
+				color: transparent;
+				height: 4rem;
+				position: absolute;
+				right: 2rem;
+				text-align: center;
+				top: 1.3rem;
+				width: 14.5rem;
+			}
+		}//mainNavigation-nav
+	}//mainNavigation
+}//profileAndMainNavigation
