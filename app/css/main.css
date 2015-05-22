@@ -305,7 +305,9 @@ header {
       .mainAndAsides .products .product:nth-child(even) {
         margin-right: 4.3rem; }
       .mainAndAsides .products .product-image {
-        max-height: 25rem; }
+        max-height: 25rem;
+        position: relative;
+        text-align: center; }
         .mainAndAsides .products .product-image img {
           height: 25rem; }
       .mainAndAsides .products .product .productInformation {
@@ -420,3 +422,40 @@ aside .asideBanner {
     line-height: 1.5; }
     aside .asideBanner-description a {
       color: #00a3d9; }
+
+.product-image:hover .editProduct {
+  display: block; }
+
+.editProduct {
+  display: none;
+  height: 4.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  .editProduct a {
+    box-sizing: border-box;
+    color: white;
+    font-size: 2rem;
+    font-weight: normal;
+    padding-top: 1rem; }
+    .editProduct a:hover {
+      border: 2px solid white;
+      border-bottom: 0;
+      text-decoration: none; }
+  .editProduct-edit {
+    border: 2px solid #58c5a8;
+    border-bottom: 0;
+    background: #58c5a8;
+    height: 5rem;
+    display: block;
+    float: left;
+    width: 50%; }
+  .editProduct-delete {
+    border: 2px solid #e9595c;
+    border-bottom: 0;
+    background: #e9595c;
+    height: 5rem;
+    display: block;
+    float: left;
+    width: 50%; }

@@ -111,6 +111,8 @@
 		}
 		&-image{
 			max-height: 25rem;
+			position: relative;
+			text-align: center;
 			img{
 				height: 25rem;
 			}//product-image img
