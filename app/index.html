@@ -10,30 +10,83 @@
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+<!-- Button trigger modal -->
+<div class="popUp modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="modalEditLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modalEditLabel">Add New Product</h4>
+      </div>
+      <div class="modal-body">
+        <form action="" id="addNewProduct" class="addNewProduct">
+        	<div class="addNewProduct-dragAndDrop">
+        		<h4>Drag and Drop signed images here</h4>
+		        <button type="button" class="fileUpload btn btn-info btn-lg">Select Files From Your Computer</button>
+        	</div><!--addNewProduct-dragAndDrop-->
+        	<p>
+        		<label for="inputPrice">Price</label>
+        		<input name="inputPrice" class="form-control" type="text" placeholder="e.g $600" />
+        	</p>
+        	<p>
+        		<label for="inputLink">Link for your store</label>
+        		<input name="inputLink" class="form-control" type="text" placeholder="www.yourstore.com/iphone6" />
+        	</p>
+        	<p>
+        		<label for="inputShare">Share files with</label>
+        		<select name="" id="" class="form-control">
+        			<option value="0" default>Select</option>
+        			<option value="1" default>Option 1</option>
+        			<option value="2" default>Option 2</option>
+        			<option value="3" default>Option 3</option>
+        		</select>
+        	</p>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popUp modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDeleteLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content alert">
+    <div class="modal-header">
+    	<h3>¿Delete element?</h3>	
+    </div>
+    	<button type="button" class="btn btn-danger btn-large btn-block">Confirm</button>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-alert" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div><!--popUp
 	<div class="general">
 		<header>
-		<div class="container-max">
-			<div class="logo">
-				<h1><a href="#">webtalk</a></h1>
-			</div><!--/logo-->
-			<div class="searchBox">
-				<form action="">
-					<i class="searchBox-iconSearch fa fa-search"></i>
-					<input type="search" class="searchBox-input" placeholder="Search people, job titles, companies and more" />
-				</form>
-			</div><!--/searchBox-->
-			<div class="navHeader">
-				<nav class="navHeader-nav">
-					<ul>
-						<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--message fa fa-envelope-o"><span>Message</span></a></li>
-						<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--notification fa fa-bell-o"><span>Notification</span></a></li>
-						<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--users fa fa-users"><span>Users</span></a></li>
-						<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--settings fa fa-cog"><span>Settings</span></a></li>
-						<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--menu fa fa-navicon"><span>Menu</span></a></li>
-					</ul>
-				</nav><!--/navHeader-nav-->
-			</div><!--/navHeader-->
-		</div>
+			<div class="container-max">
+				<div class="logo">
+					<h1><a href="#">webtalk</a></h1>
+				</div><!--/logo-->
+				<div class="searchBox">
+					<form action="">
+						<i class="searchBox-iconSearch fa fa-search"></i>
+						<input type="search" class="searchBox-input" placeholder="Search people, job titles, companies and more" />
+					</form>
+				</div><!--/searchBox-->
+				<div class="navHeader">
+					<nav class="navHeader-nav">
+						<ul>
+							<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--message fa fa-envelope-o"><span>Message</span></a></li>
+							<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--notification fa fa-bell-o"><span>Notification</span></a></li>
+							<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--users fa fa-users"><span>Users</span></a></li>
+							<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--settings fa fa-cog"><span>Settings</span></a></li>
+							<li class="navHeader-nav-item"><a href="#" class="navHeader-nav-item--menu fa fa-navicon"><span>Menu</span></a></li>
+						</ul>
+					</nav><!--/navHeader-nav-->
+				</div><!--/navHeader-->
+			</div>
 		</header>
 		<section class="mainBanner">
 			<div class="container-max">
@@ -68,7 +121,7 @@
 			</div><!--/container-max-->
 		</section><!--/profileAndMainNavigation-->
 		<section class="mainAndAsides">
-				<div class="container-max">
+			<div class="container-max">
 				<section class="mainAndAsides-main">
 					<section class="products col-md-8">
 						<div class="sectionTitleAndOptions">
@@ -95,33 +148,12 @@
 									<img src="images/content/products/phones/1.png" alt="Webtalk" />	
 								</a>
 								<div class="editProduct">
-									<a href="#" class="editProduct-edit fa fa-pencil"> </a>
-									<a href="#" class="editProduct-delete fa fa-trash-o"> </a>
+									<button type="button" class="editProduct-edit fa fa-pencil" data-toggle="modal" data-target="#modalEdit"> </button>
+									<button type="button" class="editProduct-delete fa fa-trash-o" data-toggle="modal" data-target="#modalDelete"> </button>
 								</div><!--/editProduct-->
 								<div class="editProduct">
-									<a href="#" class="editProduct-edit fa fa-pencil"> </a>
-									<a href="#" class="editProduct-delete fa fa-trash-o"> </a>
-								</div><!--/editProduct-->
-							</div><!--/product-image-->
-							<div class="productInformation">
-								<h4 class="productInformation-name">Iphone 6</h4>
-								<p class="productInformation-GbAndColor">
-									<span class="productInformation-GbAndColor-Gb">16 gb</span>
-
-									<span class="productInformation-GbAndColor-color">black</span>
-								</p>
-								<span class="productInformation-price">$600</span>
-								<a href="#" class="btnBuy btn btn-info">Buy</a>
-							</div><!--/productInformation-->
-						</div><!--/product-->
-						<div class="product">
-							<div class="product-image">
-								<a href="">
-									<img src="images/content/products/phones/3.png" alt="Webtalk" />	
-								</a>
-								<div class="editProduct">
-									<a href="#" class="editProduct-edit fa fa-pencil"> </a>
-									<a href="#" class="editProduct-delete fa fa-trash-o"> </a>
+									<button type="button" class="editProduct-edit fa fa-pencil" data-toggle="modal" data-target="#modalEdit"> </button>
+									<button type="button" class="editProduct-delete fa fa-trash-o" data-toggle="modal" data-target="#modalDelete"> </button>
 								</div><!--/editProduct-->
 							</div><!--/product-image-->
 							<div class="productInformation">
@@ -141,8 +173,29 @@
 									<img src="images/content/products/phones/3.png" alt="Webtalk" />	
 								</a>
 								<div class="editProduct">
-									<a href="#" class="editProduct-edit fa fa-pencil"> </a>
-									<a href="#" class="editProduct-delete fa fa-trash-o"> </a>
+									<button type="button" class="editProduct-edit fa fa-pencil" data-toggle="modal" data-target="#modalEdit"> </button>
+									<button type="button" class="editProduct-delete fa fa-trash-o" data-toggle="modal" data-target="#modalDelete"> </button>
+								</div><!--/editProduct-->
+							</div><!--/product-image-->
+							<div class="productInformation">
+								<h4 class="productInformation-name">Iphone 6</h4>
+								<p class="productInformation-GbAndColor">
+									<span class="productInformation-GbAndColor-Gb">16 gb</span>
+
+									<span class="productInformation-GbAndColor-color">black</span>
+								</p>
+								<span class="productInformation-price">$600</span>
+								<a href="#" class="btnBuy btn btn-info">Buy</a>
+							</div><!--/productInformation-->
+						</div><!--/product-->
+						<div class="product">
+							<div class="product-image">
+								<a href="">
+									<img src="images/content/products/phones/3.png" alt="Webtalk" />	
+								</a>
+								<div class="editProduct">
+									<button type="button" class="editProduct-edit fa fa-pencil" data-toggle="modal" data-target="#modalEdit"> </button>
+									<button type="button" class="editProduct-delete fa fa-trash-o" data-toggle="modal" data-target="#modalDelete"> </button>
 								</div><!--/editProduct-->
 							</div><!--/product-image-->
 							<div class="productInformation">
@@ -162,8 +215,8 @@
 									<img src="images/content/products/phones/2.png" alt="Webtalk" />	
 								</a>
 								<div class="editProduct">
-									<a href="#" class="editProduct-edit fa fa-pencil"> </a>
-									<a href="#" class="editProduct-delete fa fa-trash-o"> </a>
+									<button type="button" class="editProduct-edit fa fa-pencil" data-toggle="modal" data-target="#modalEdit"> </button>
+									<button type="button" class="editProduct-delete fa fa-trash-o" data-toggle="modal" data-target="#modalDelete"> </button>
 								</div><!--/editProduct-->
 							</div><!--/product-image-->
 							<div class="productInformation">
@@ -183,8 +236,8 @@
 									<img src="images/content/products/phones/1.png" alt="Webtalk" />	
 								</a>
 								<div class="editProduct">
-									<a href="#" class="editProduct-edit fa fa-pencil"> </a>
-									<a href="#" class="editProduct-delete fa fa-trash-o"> </a>
+									<button type="button" class="editProduct-edit fa fa-pencil" data-toggle="modal" data-target="#modalEdit"> </button>
+									<button type="button" class="editProduct-delete fa fa-trash-o" data-toggle="modal" data-target="#modalDelete"> </button>
 								</div><!--/editProduct-->
 							</div><!--/product-image-->
 							<div class="productInformation">
@@ -204,8 +257,8 @@
 									<img src="images/content/products/phones/3.png" alt="Webtalk" />	
 								</a>
 								<div class="editProduct">
-									<a href="#" class="editProduct-edit fa fa-pencil"> </a>
-									<a href="#" class="editProduct-delete fa fa-trash-o"> </a>
+									<button type="button" class="editProduct-edit fa fa-pencil" data-toggle="modal" data-target="#modalEdit"> </button>
+									<button type="button" class="editProduct-delete fa fa-trash-o" data-toggle="modal" data-target="#modalDelete"> </button>
 								</div><!--/editProduct-->
 							</div><!--/product-image-->
 							<div class="productInformation">

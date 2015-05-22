@@ -1,0 +1,26 @@
+.popUp{
+	.addNewProduct{
+		&-dragAndDrop{
+			background: $gray4;
+			margin-bottom: 3rem;
+			padding: 7rem 0;
+			text-align: center;
+			h4{
+				color: $gray3;
+				margin: 0 0 2rem;
+			}
+			.fileUpload{
+				margin: 0 auto;
+			}//fileUpload
+		}//addNewProduct-modal
+		p{
+			font-size: 1.6rem;
+			label{
+				font-size: 1.6rem;
+			}//label
+			select{
+				cursor: pointer;
+			}//select
+		}
+	}//addNewProduct
+}//popUp

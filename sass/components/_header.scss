@@ -46,7 +46,6 @@ header{
 		}//searchBox-iconSearch
 	}//searchBox
 	.navHeader{
-		background: $gray2;
 		float: left;
 		min-width: 36.5rem;
 		&-nav{
@@ -57,7 +56,8 @@ header{
 				padding: 0;
 				margin: 0;
 				.navHeader-nav-item{//li
-					float: left;
+					background: $gray2;
+					display: inline-block;
 					a{
 						box-sizing: border-box;
 						border-top: 4px solid $gray2;
@@ -76,9 +76,9 @@ header{
 						}//a:hover
 						span{
 							color: transparent;
-							height: 4rem;
+							height: 3.6rem;
 							left: 0;
-							line-height: 4rem;
+							line-height: 3.6rem;
 							position: absolute;
 							text-align: center;
 							top: 0;
