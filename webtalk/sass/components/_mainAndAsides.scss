@@ -1,0 +1,78 @@
+.mainAndAsides{
+	&-main{
+		box-sizing: border-box;
+		background: white;
+		padding: 2rem;
+		.sectionTitleAndOptions{
+			.sectionTitle{}//sectionTitle
+			.sectionOptions{
+				&-search{}//sectionOptions-search
+				&-order{}//sectionOptions-order
+				&-edit{}//sectionOptions-edit
+			}//sectionOptions
+		}//sectionTitleAndOptions
+	}//mainAndAsides-main
+
+.products{
+	width: 690px;
+	overflow: hidden;
+	.product{
+		box-sizing: border-box;
+		border: 1px solid $gray4;
+		display: inline-block;
+		height: 38rem;
+		width: 31rem;
+		&:nth-child(odd){
+			margin-right: 2.5rem;
+		}
+		&-image{
+			max-height: 25rem;
+			img{
+				height: 25rem;
+			}//product-image img
+		}//product-image
+		.productInformation{
+			background: $gray4;
+			box-sizing: border-box;
+			height: 13rem;
+			line-height: 1em;
+			padding: 1.5rem 1.5rem 6rem;
+			position: relative;
+			&-name{
+				font-size: 1.6rem;
+				font-weight: 600;
+				margin: 0 0 1rem;
+			}//productInformation-name
+			&-GbAndColor{
+				font-size: 1.6rem;
+				font-weight: 300;
+				line-height: 1em;
+				margin: 0;
+				&-Gb{}//productInformation-GbAndColor-Gb
+				&-color{}//productInformation-GbAndColor-color
+			}//productInformation-GbAndColor
+			&-price{
+				font-size: 2rem;
+				font-weight: 600;
+				line-height: 1em;
+				position: absolute;
+				right: 1.6rem;
+				top: 1.6rem;
+			}//productInformation-price
+			.btnBuy{
+				background: url(../images/design/misc/btnBuy.png) no-repeat center center /cover;
+				bottom: 1.5rem;
+				color: transparent;
+				display: block;
+				height: 4.5rem;
+				left: 1.5rem;
+				position: absolute;
+				right: 1.5rem;
+				text-align: center;
+				width: 27.5rem;
+			}//productInformation-btnBuy
+		}//productInformation
+	}//product
+}//products
+
+}//mainAndAsides
