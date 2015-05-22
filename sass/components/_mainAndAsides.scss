@@ -16,7 +16,6 @@
 				float: left;
 				list-style: none;
 				margin: 0;
-				padding: 1rem;
 				text-align: right;
 				width: 60%;
 				.sectionOptions-option{
@@ -100,16 +99,15 @@
 	background: white;
 	overflow: hidden;
 	padding: 2rem;
-	width: 690px;
 	.product{
 		border: 1px solid $gray4;
 		box-sizing: border-box;
 		display: inline-block;
 		height: 38rem;
 		margin-bottom: 2rem;
-		width: 31rem;
+		width: 46.66666667%;
 		&:nth-child(even){
-			margin-right: 2.5rem;
+			margin-right: 4.3rem;
 		}
 		&-image{
 			max-height: 25rem;
@@ -156,7 +154,6 @@
 				position: absolute;
 				right: 1.5rem;
 				text-align: center;
-				width: 27.5rem;
 			}//productInformation-btnBuy
 		}//productInformation
 	}//product
@@ -164,7 +161,6 @@
 .mainAndAsides-asides{
 	float: left;
 	padding: 0 2rem 2rem;
-	width: 30rem;
 	&-staff{
 		ul.staff{
 			list-style: none;
@@ -201,17 +197,22 @@
 					}//staff-member-info-career
 				}//staff-member-info
 				&-openProfile{
-					background: url(../images/design/icon/openStaffProfile.png) no-repeat center center /cover;
-					color: transparent;
-					font-size: 1.6rem;
+					border: 1px solid $gray3;
+					color: $gray3;
 					display: block;
 					height: 3.5rem;
+					font-size: 1.9rem;
+					font-weight: lighter;
 					line-height: 3.5rem;
 					position: absolute;
 					right: 0;
 					top: 0;
+					padding-top: .1rem;
 					text-align: center;
 					width: 3.5rem;
+					&:hover{
+						text-decoration: none;
+					}//hover
 				}//staff-member-openProfile
 				&-hideInfo{
 					display: none;

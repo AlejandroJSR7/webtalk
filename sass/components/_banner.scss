@@ -1,7 +1,7 @@
 .mainBanner{
 	height: 390px;
 	width: 100%;
-	.container{
+	.container-max{
 		position: relative;
 		.mainBanner-shadow{
 			background: url(../images/design/bg/mainBanner-shadow.png) repeat left top;
@@ -12,7 +12,7 @@
 			width: 1100px;
 		}//mainBanner-shadow
 		.mainBanner-img{
-			color: blue;
+			width: 100%;
 		}//mainBanner-img
 		.mainBanner-title{
 			color: white;
@@ -26,5 +26,5 @@
 			top: 45%;
 			width: 500px;
 		}//mainBanner-title
-	}//container
+	}//container-max
 }//mainBanner

@@ -1,7 +1,7 @@
 .profileAndMainNavigation{
 	height: 6.5rem;
 	margin-bottom: 2rem;
-	.container{
+	.container-max{
 		background: white;
 		height: 6.5rem;
 		position: relative;
@@ -49,9 +49,10 @@
 				}
 			}//profileInformation-followers
 		}//profileInformation
-	}//container
+	}//container-max
 	.mainNavigation{
 		left: 185px;
+		padding-left: 2rem;
 		position: relative;
 		width: calc(100% - 201px);
 		&-nav{
@@ -64,84 +65,32 @@
 				li.mainNavigation-item{
 					display: inline-block;
 					line-height: 6.5rem;
+					margin-right: 1rem;
 					a{
 						color: $gray2;
 						display: block;
 						font-weight: 600;
 						height: 6.5rem;
+						line-height: 6.5rem;
 						padding: 0 .5rem;
 						text-align: center;
 						span{
+							font-family: 'Open Sans', sans-serif;
+							padding-left: 1rem;
 							display: inline-block;
-							height: 20px;
-							margin-right: 5px;
-							width: 20px;
 						}//span
 						&:hover{
 							color: $blue1;
 							text-decoration: none;
 						}//a:hover
 					}//a
-					&--profile{
-						a{
-							span{
-								background: url(../images/design/icon/mainNavigation-profile.png) no-repeat center center /cover;
-								height: 21px;
-								width: 25px;
-							}
-						}
-					}//mainNavigation-item--profile
-					&--products{
-						a{
-							span{
-								background: url(../images/design/icon/mainNavigation-products.png) no-repeat center center /cover;
-								height: 21px;
-								width: 21px;
-							}
-						}
-					}//mainNavigation-item--products
-					&--files{
-						a{
-							span{
-								background: url(../images/design/icon/mainNavigation-files.png) no-repeat center center /cover;
-								height: 21px;
-								width: 21px;
-							}
-						}
-					}//mainNavigation-item--files
-					&--photos{
-						a{
-							span{
-								background: url(../images/design/icon/mainNavigation-photos.png) no-repeat center center /cover;
-								height: 21px;
-								width: 21px;
-							}
-						}
-					}//mainNavigation-item--photos
-					&--videos{
-						a{
-							span{
-								background: url(../images/design/icon/mainNavigation-videos.png) no-repeat center center /cover;
-								height: 21px;
-								width: 21px;
-							}
-						}
-					}//mainNavigation-item--videos
-					&--about{
-						a{
-							span{
-								background: url(../images/design/icon/mainNavigation-about.png) no-repeat center center /cover;
-								height: 21px;
-								width: 21px;
-							}
-						}
-					}//mainNavigation-item--about
 				}//li.mainNavigation-item
 			}//ul
 			.btnFollow{
-				background: url(../images/design/misc/btnFollow.png) no-repeat center center /cover;
-				color: transparent;
+				color: white;
 				height: 4rem;
+				line-height: 4rem;
+				padding: 0;
 				position: absolute;
 				right: 2rem;
 				text-align: center;
