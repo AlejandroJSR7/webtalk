@@ -236,57 +236,215 @@ header {
       top: 1.3rem;
       width: 14.5rem; }
 
-.mainAndAsides-main {
-  box-sizing: border-box;
-  background: white;
-  padding: 2rem; }
-
-.mainAndAsides .products {
-  width: 690px;
+.mainAndAsides {
   overflow: hidden; }
-  .mainAndAsides .products .product {
-    box-sizing: border-box;
-    border: 1px solid #eeeff1;
-    display: inline-block;
-    height: 38rem;
-    width: 31rem; }
-    .mainAndAsides .products .product:nth-child(odd) {
-      margin-right: 2.5rem; }
-    .mainAndAsides .products .product-image {
-      max-height: 25rem; }
-      .mainAndAsides .products .product-image img {
-        height: 25rem; }
-    .mainAndAsides .products .product .productInformation {
-      background: #eeeff1;
-      box-sizing: border-box;
-      height: 13rem;
-      line-height: 1em;
-      padding: 1.5rem 1.5rem 6rem;
-      position: relative; }
-      .mainAndAsides .products .product .productInformation-name {
-        font-size: 1.6rem;
-        font-weight: 600;
-        margin: 0 0 1rem; }
-      .mainAndAsides .products .product .productInformation-GbAndColor {
-        font-size: 1.6rem;
-        font-weight: 300;
-        line-height: 1em;
-        margin: 0; }
-      .mainAndAsides .products .product .productInformation-price {
+  .mainAndAsides-main {
+    box-sizing: border-box; }
+    .mainAndAsides-main .sectionTitleAndOptions {
+      overflow: hidden; }
+      .mainAndAsides-main .sectionTitleAndOptions .sectionTitle {
+        float: left;
         font-size: 2rem;
         font-weight: 600;
+        margin: 0 0 2rem;
+        width: 40%; }
+      .mainAndAsides-main .sectionTitleAndOptions .sectionOptions {
+        box-sizing: border-box;
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 1rem;
+        text-align: right;
+        width: 60%; }
+        .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option {
+          border-radius: 2px;
+          border: 1px solid #778591;
+          color: #778591;
+          display: inline-block;
+          font-size: 1.6rem;
+          height: 3rem;
+          margin: 0 0.5rem;
+          overflow: hidden;
+          text-align: center;
+          width: 3rem; }
+          .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option--active {
+            border-color: #58c5a8;
+            color: #58c5a8; }
+            .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option--active a.optionLink {
+              color: #58c5a8; }
+            .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option--active span {
+              color: #58c5a8; }
+          .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option:hover {
+            border-color: #00a3d9;
+            color: #00a3d9;
+            cursor: pointer; }
+            .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option:hover a.optionLink {
+              color: #00a3d9;
+              text-decoration: none; }
+            .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option:hover span {
+              color: #00a3d9; }
+          .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option a {
+            box-sizing: border-box;
+            color: #778591;
+            display: block;
+            font-size: 1.3rem;
+            height: 3rem;
+            line-height: 1em;
+            text-align: center;
+            width: 3rem; }
+          .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option.sectionOptions-option--search a {
+            padding-top: .8rem;
+            padding-right: .3rem; }
+          .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option.sectionOptions-option--order {
+            position: relative; }
+            .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option.sectionOptions-option--order a {
+              display: block;
+              font-size: 1.1rem;
+              padding-right: 2px;
+              padding-top: .8rem; }
+            .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option.sectionOptions-option--order span {
+              font-size: 1rem;
+              line-height: 1em;
+              position: absolute;
+              text-align: center;
+              width: 100%; }
+              .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option.sectionOptions-option--order span.fa-sort-asc {
+                top: .3rem;
+                left: 0; }
+              .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option.sectionOptions-option--order span.fa-sort-desc {
+                bottom: .3rem;
+                left: 0; }
+          .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option.sectionOptions-option--edit {
+            letter-spacing: 0; }
+            .mainAndAsides-main .sectionTitleAndOptions .sectionOptions .sectionOptions-option.sectionOptions-option--edit a {
+              padding-top: .6rem;
+              letter-spacing: 0; }
+  .mainAndAsides .products {
+    float: left;
+    background: white;
+    overflow: hidden;
+    padding: 2rem;
+    width: 690px; }
+    .mainAndAsides .products .product {
+      border: 1px solid #eeeff1;
+      box-sizing: border-box;
+      display: inline-block;
+      height: 38rem;
+      margin-bottom: 2rem;
+      width: 31rem; }
+      .mainAndAsides .products .product:nth-child(even) {
+        margin-right: 2.5rem; }
+      .mainAndAsides .products .product-image {
+        max-height: 25rem; }
+        .mainAndAsides .products .product-image img {
+          height: 25rem; }
+      .mainAndAsides .products .product .productInformation {
+        background: #eeeff1;
+        box-sizing: border-box;
+        height: 13rem;
         line-height: 1em;
-        position: absolute;
-        right: 1.6rem;
-        top: 1.6rem; }
-      .mainAndAsides .products .product .productInformation .btnBuy {
-        background: url(../images/design/misc/btnBuy.png) no-repeat center center/cover;
-        bottom: 1.5rem;
-        color: transparent;
-        display: block;
-        height: 4.5rem;
-        left: 1.5rem;
-        position: absolute;
-        right: 1.5rem;
-        text-align: center;
-        width: 27.5rem; }
+        padding: 1.5rem 1.5rem 6rem;
+        position: relative; }
+        .mainAndAsides .products .product .productInformation-name {
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin: 0 0 1rem; }
+        .mainAndAsides .products .product .productInformation-GbAndColor {
+          font-size: 1.6rem;
+          font-weight: 300;
+          line-height: 1em;
+          margin: 0; }
+        .mainAndAsides .products .product .productInformation-price {
+          font-size: 2rem;
+          font-weight: 600;
+          line-height: 1em;
+          position: absolute;
+          right: 1.6rem;
+          top: 1.6rem; }
+        .mainAndAsides .products .product .productInformation .btnBuy {
+          border: 0;
+          bottom: 1.5rem;
+          color: white;
+          display: block;
+          height: 4.5rem;
+          left: 1.5rem;
+          padding-top: 1.3rem;
+          position: absolute;
+          right: 1.5rem;
+          text-align: center;
+          width: 27.5rem; }
+  .mainAndAsides .mainAndAsides-asides {
+    float: left;
+    padding: 0 2rem 2rem;
+    width: 30rem; }
+    .mainAndAsides .mainAndAsides-asides-staff ul.staff {
+      list-style: none;
+      padding: 0; }
+      .mainAndAsides .mainAndAsides-asides-staff ul.staff h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 0 0 2rem;
+        text-transform: uppercase; }
+      .mainAndAsides .mainAndAsides-asides-staff ul.staff .staff-member {
+        overflow: hidden;
+        margin-bottom: 2rem;
+        position: relative; }
+        .mainAndAsides .mainAndAsides-asides-staff ul.staff .staff-member-avatar {
+          float: left;
+          display: block;
+          height: 3.5rem;
+          margin-right: 1.5rem;
+          width: 3.5rem; }
+        .mainAndAsides .mainAndAsides-asides-staff ul.staff .staff-member-info {
+          float: left;
+          font-size: 1.6rem;
+          line-height: 1em; }
+          .mainAndAsides .mainAndAsides-asides-staff ul.staff .staff-member-info-name {
+            color: #00a3d9;
+            display: block;
+            margin-bottom: .5rem; }
+          .mainAndAsides .mainAndAsides-asides-staff ul.staff .staff-member-info-career {
+            color: #363e45;
+            display: block; }
+        .mainAndAsides .mainAndAsides-asides-staff ul.staff .staff-member-openProfile {
+          background: url(../images/design/icon/openStaffProfile.png) no-repeat center center/cover;
+          color: transparent;
+          font-size: 1.6rem;
+          display: block;
+          height: 3.5rem;
+          line-height: 3.5rem;
+          position: absolute;
+          right: 0;
+          top: 0;
+          text-align: center;
+          width: 3.5rem; }
+        .mainAndAsides .mainAndAsides-asides-staff ul.staff .staff-member-hideInfo {
+          display: none;
+          border-top: 1px solid #e7e8e9;
+          clear: both; }
+          .mainAndAsides .mainAndAsides-asides-staff ul.staff .staff-member-hideInfo h5 {
+            display: block;
+            font-weight: 600; }
+          .mainAndAsides .mainAndAsides-asides-staff ul.staff .staff-member-hideInfo p {
+            color: #363e45;
+            font-size: 1.5rem;
+            line-height: 1em; }
+
+aside .asideBanner {
+  background: white;
+  box-sizing: border-box;
+  height: 24.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  width: 100%; }
+  aside .asideBanner-image {
+    margin-bottom: 2rem; }
+    aside .asideBanner-image img {
+      height: 95px;
+      max-width: 130px; }
+  aside .asideBanner-description {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5; }
+    aside .asideBanner-description a {
+      color: #00a3d9; }

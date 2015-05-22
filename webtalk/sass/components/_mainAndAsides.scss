@@ -1,28 +1,114 @@
 .mainAndAsides{
+	overflow: hidden;
 	&-main{
 		box-sizing: border-box;
-		background: white;
-		padding: 2rem;
 		.sectionTitleAndOptions{
-			.sectionTitle{}//sectionTitle
+			overflow: hidden;
+			.sectionTitle{
+				float: left;
+				font-size: 2rem;
+				font-weight: 600;
+				margin: 0 0 2rem;
+				width: 40%;
+			}//sectionTitle
 			.sectionOptions{
-				&-search{}//sectionOptions-search
-				&-order{}//sectionOptions-order
-				&-edit{}//sectionOptions-edit
+				box-sizing: border-box;
+				float: left;
+				list-style: none;
+				margin: 0;
+				padding: 1rem;
+				text-align: right;
+				width: 60%;
+				.sectionOptions-option{
+					border-radius: 2px;
+					border: 1px solid $gray3;
+					color: $gray3;
+					display: inline-block;
+					font-size: 1.6rem;
+					height: 3rem;
+					margin: 0 .5rem;
+					overflow: hidden;
+					text-align: center;
+					width: 3rem;
+					&--active{
+						border-color: $green1;
+						color: $green1;
+						a.optionLink{color: $green1;}
+						span{color: $green1;}
+					}//sectionOption-option--active
+					&:hover{
+						border-color: $blue1;
+						color: $blue1;
+						cursor: pointer;
+						a.optionLink{color: $blue1; text-decoration: none;}
+						span{color: $blue1;}
+					}
+					a{
+						box-sizing: border-box;
+						color: $gray3;
+						display: block;
+						font-size: 1.3rem;
+						height: 3rem;
+						line-height: 1em;
+						text-align: center;
+						width: 3rem;
+					}//a
+					&.sectionOptions-option--search{
+						a{
+							padding-top: .8rem;
+							padding-right: .3rem;
+						}
+					}//sectionOptions-search
+					&.sectionOptions-option--order{
+						position: relative;
+						a{
+							display: block;
+							font-size: 1.1rem;
+							padding-right: 2px;
+							padding-top: .8rem;
+						}
+						span{
+							font-size: 1rem;
+							line-height: 1em;
+							position: absolute;
+							text-align: center;
+							width: 100%;
+							&.fa-sort-asc{
+								top: .3rem;
+								left: 0;
+							}//fa-sort-asc
+							&.fa-sort-desc{
+								bottom: .3rem;
+								left: 0;
+							}//fa-sort-desc
+						}//span
+					}//sectionOptions-order
+					&.sectionOptions-option--edit{
+						letter-spacing: 0;
+						a{
+							padding-top: .6rem;
+							letter-spacing: 0;
+						}//a
+					}//sectionOptions-edit
+				}
 			}//sectionOptions
 		}//sectionTitleAndOptions
 	}//mainAndAsides-main
 
 .products{
-	width: 690px;
+	float: left;
+	background: white;
 	overflow: hidden;
+	padding: 2rem;
+	width: 690px;
 	.product{
-		box-sizing: border-box;
 		border: 1px solid $gray4;
+		box-sizing: border-box;
 		display: inline-block;
 		height: 38rem;
+		margin-bottom: 2rem;
 		width: 31rem;
-		&:nth-child(odd){
+		&:nth-child(even){
 			margin-right: 2.5rem;
 		}
 		&-image{
@@ -60,12 +146,13 @@
 				top: 1.6rem;
 			}//productInformation-price
 			.btnBuy{
-				background: url(../images/design/misc/btnBuy.png) no-repeat center center /cover;
+				border: 0;
 				bottom: 1.5rem;
-				color: transparent;
+				color: white;
 				display: block;
 				height: 4.5rem;
 				left: 1.5rem;
+				padding-top:  1.3rem;
 				position: absolute;
 				right: 1.5rem;
 				text-align: center;
@@ -74,5 +161,101 @@
 		}//productInformation
 	}//product
 }//products
-
+.mainAndAsides-asides{
+	float: left;
+	padding: 0 2rem 2rem;
+	width: 30rem;
+	&-staff{
+		ul.staff{
+			list-style: none;
+			padding: 0;
+			h3{
+				font-size: 1.4rem;
+				font-weight: 600;
+				margin: 0 0 2rem;
+				text-transform: uppercase;
+			}//h3
+			.staff-member{
+				overflow: hidden;
+				margin-bottom: 2rem;
+				position: relative;
+				&-avatar{
+					float: left;
+					display: block;
+					height: 3.5rem;
+					margin-right: 1.5rem;
+					width: 3.5rem;
+				}//staff-member-avatar
+				&-info{
+					float: left;
+					font-size: 1.6rem;
+					line-height: 1em;
+					&-name{
+						color: $blue1;
+						display: block;
+						margin-bottom: .5rem;
+					}//staff-member-info-name
+					&-career{
+						color: $gray1;
+						display: block;
+					}//staff-member-info-career
+				}//staff-member-info
+				&-openProfile{
+					background: url(../images/design/icon/openStaffProfile.png) no-repeat center center /cover;
+					color: transparent;
+					font-size: 1.6rem;
+					display: block;
+					height: 3.5rem;
+					line-height: 3.5rem;
+					position: absolute;
+					right: 0;
+					top: 0;
+					text-align: center;
+					width: 3.5rem;
+				}//staff-member-openProfile
+				&-hideInfo{
+					display: none;
+					border-top: 1px solid #e7e8e9;
+					clear: both;
+					h5{
+						display: block;
+						font-weight: 600;
+					}//h5
+					p{
+						color: $gray1;
+						font-size: 1.5rem;
+						line-height: 1em;
+					}//p
+				}//staff-member-hideInfo
+			}//staff-member
+		}//staff
+	}//mainAndAsides-asides-staff
+}//mainAndAsides-asides
 }//mainAndAsides
+
+aside{
+	.asideBanner{
+		background: white;
+		box-sizing: border-box;
+		height: 24.5rem;
+		padding: 2.5rem;
+		text-align: center;
+		width: 100%;
+		h5{}//h5
+		&-image{
+			img{
+				height: 95px;
+				max-width: 130px;
+			}//img
+			margin-bottom: 2rem;
+		}//asideBanner-image
+		&-description{
+			font-size: 1.2rem;
+			font-weight: 600;
+			line-height: 1.5;
+			a{
+				color: $blue1;
+			}//a
+		}//asideBanner-description
+	}//asideBanner
+}
